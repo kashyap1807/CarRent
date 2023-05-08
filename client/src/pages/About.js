@@ -6,7 +6,10 @@ function About() {
 
     <DefaultLayout>
 
+        <br />
+        <br />
     <div className="about">
+
             <div class="containersec2">
                     <br />
                     <h2 class="heading-2">About Us</h2>
@@ -55,6 +58,9 @@ function About() {
 
                     </div>
         </div>
+
+        <br />
+        <br />
     </DefaultLayout>
   )
 }

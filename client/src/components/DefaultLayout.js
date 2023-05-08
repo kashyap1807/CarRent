@@ -5,7 +5,8 @@ import { Link } from 'react-router-dom';
 
 
 function DefaultLayout(props) {
-    const user = JSON.parse(localStorage.getItem('user'))
+    const user = JSON.parse(localStorage.getItem('user'));   
+	// alert(JSON.stringify(user))
     const menu = (
         <Menu>
             <Menu.Item>
@@ -18,11 +19,11 @@ function DefaultLayout(props) {
                     Bookings
                 </a>
             </Menu.Item>
-            <Menu.Item>
+           {user.username=="admin" && <Menu.Item>
                 <a href="/admin">
-                    Admin
+                    Admin Panel
                 </a>
-            </Menu.Item>
+            </Menu.Item> }
             <Menu.Item>
                 <a href="/about">
                     About Us
@@ -73,6 +74,9 @@ function DefaultLayout(props) {
 					</div>	
 					<p class="white-text" style={{}}>
 						This is a Carpool system...
+						<br/>
+						<br/>
+						Design And Created By CarPool System Team.
 					</p>
 				</div>
 				<div class="col-md-3 m-b-30">
@@ -80,13 +84,13 @@ function DefaultLayout(props) {
 						Useful Links
 					</div>	
 					<div class="footer-links">
-						<a href="#">
-							How it Works ?
+						<a href="/login">
+							Login
 						</a>
-						<a href="#">
-							Publish
+						<a href="register">
+							Register
 						</a>
-						<a href="#">
+						<a href="/">
 							Home
 						</a>
 						
@@ -97,13 +101,13 @@ function DefaultLayout(props) {
 						Quick Links
 					</div>	
 					<div class="footer-links">
-						<a href="#">
-							Blog
+						<a href="/AddCar">
+							Publish
 						</a>
-						<a href="#">
-							FAQ
+						<a href="/about">
+							About Us
 						</a>
-						<a href="#">
+						<a href="/termscondi">
 							Terms & conditions
 						</a>
 						
@@ -114,15 +118,16 @@ function DefaultLayout(props) {
 						Contact
 					</div>	
 					<div class="footer-links">
-						<a >
+						<p>
 							Delhi , D 10012 , Ind
-						</a>
-						<a >
+						</p>
+						<p>
 							carpool18@gmail.com
-						</a>
-						<a>
+						</p>
+						<p>
 							+91293 13256
-						</a>
+						</p>
+						
 						
 					</div>
 

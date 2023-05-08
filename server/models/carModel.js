@@ -26,6 +26,14 @@ const carSchema = new mongoose.Schema({
     rentPerHour: {
         type: Number,
         required: true
+    },
+    starting: {
+        type: String,
+        required: true
+    },
+    destination: {
+        type: String,
+        required: true
     }
 }, { timestamps: true })
 

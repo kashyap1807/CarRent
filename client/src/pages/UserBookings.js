@@ -32,17 +32,20 @@ function UserBookings() {
                     {bookings.filter(o => o.user === user._id).map((booking) => {
                         return <Row gutter={16} className="bs1 m-3 text-left">
                             <Col lg={6} sm={24}>
-                                <p><b>{booking?.car?.name}</b></p>
-                                <p>Total hours{booking?.car?.totalHours}</p>
-                                <p>Rent per hour {booking?.car?.rentPerHour} /-</p>
+                                <h5><b>{booking?.car?.name}</b></h5>
+                                <p> Transaction Id : {booking?.transactionId}</p>
+                                <p>Total hours : {booking.totalHours}</p>
+                                <p>Rent per hour : {booking?.car?.rentPerHour} /-</p>
                                 <p>Total amount = {booking?.totalAmount}</p>
                             </Col>
 
                             <Col lg={12} sm={24}>
-                                <p> Transaction Id: <b>{booking?.transactionId}</b></p>
-                                <p>From: {booking?.bookedTimeSlots?.from}</p>
-                                <p>To: {booking?.bookedTimeSlots?.to}</p>
-                                <p>Date of booking: <b>{moment(booking?.createdAt).format('MMM DD yyyy')}</b></p>
+                                
+                                <p>Starting Point : {booking?.car.starting}</p>
+                                <p>Destination : {booking?.car.destination}</p>
+                                <p>From : {booking?.bookedTimeSlots?.from}</p>
+                                <p>To : {booking?.bookedTimeSlots?.to}</p>
+                                <p>Date of booking : {moment(booking?.createdAt).format('MMM DD yyyy')}</p>
                             </Col>
 
                             <Col lg={6} sm={24} className="text-right" >

@@ -110,7 +110,7 @@ button {
 }
 
 .car:hover {
-  height: 220px;
+  height: 280px;
 }
 
 .car:hover>.car-content {
@@ -123,11 +123,11 @@ button {
   height: 180px;
   width: auto;
   border-radius: 5px;
-  transform: translateY(-50px);
+  transform: translateY(-40px);
 }
 
 .car-content {
-  transform: translateY(-200px);
+  transform: translateY(-100px);
   opacity: 0;
   transition: 0.3s;
 }

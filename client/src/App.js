@@ -12,6 +12,8 @@ import AdminHome from './pages/AdminHome';
 import EditCar from './pages/EditCar';
 import Protect from './pages/Protect';
 import About from './pages/About';
+import AdminProtect from './pages/AdminProtect';
+import TermsCondi from './pages/TermsCondi';
 
 
 function App() {
@@ -29,9 +31,10 @@ function App() {
           <Route path="/booking/:carid"  element={<BookingCars/>} />
           <Route path="/userbookings"  element={<UserBookings/>} />
           <Route path="/addcar"  element={<AddCar/>} />
-          <Route path="/admin"  element={<AdminHome/>} />
+          <Route path="/admin"  element={<AdminProtect><AdminHome/></AdminProtect>} />
           <Route path='/about' element={<About/>}/>
           <Route path="/editcar/:carid"  element={<EditCar/>} />
+          <Route path='/termscondi' element={<TermsCondi/>}/>
         </Routes>
       </Router>
     </div>

@@ -102,6 +102,14 @@ function BookingCars() {
             <p>Max-Persons : {car.capacity} </p>
 
           </div>
+
+          <Divider dashed >Ride Info</Divider>
+          <div style={{ textAlign: "right" }}>
+            <p>Starting Point : {car.starting} </p>
+            <p>Destination : {car.destination} </p>
+
+          </div>
+
           <Divider dashed >Select Time Slots</Divider>
           <RangePicker showTime={{ format: "HH:mm" }} format='MMM DD yyyy HH:mm' onChange={selectTimeSlots} />
           <br />
@@ -109,7 +117,7 @@ function BookingCars() {
 
           {from && to && (<div>
             <p>Total Hours: <b>{totalHours}</b></p>
-            <p>Rent Per Hour/- <b>{car.rentPerHour}$</b> </p>
+            <p>Rent Per Hour/- <b>{car.rentPerHour} Rs.</b> </p>
             {/* <Checkbox onChange={(e) => {
               if (e.target.checked) {
                 setDriver(true)
@@ -119,7 +127,7 @@ function BookingCars() {
               }
             }} >Driver Requred</Checkbox> */}
 
-            <h3>Total Amount: <b>{totalAmount}$</b></h3>
+            <h3>Total Amount: <b>{totalAmount} Rs.</b></h3>
 
             <StripeCheckout
               shippingAddress

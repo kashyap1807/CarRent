@@ -88,7 +88,7 @@ function Home() {
 
         </div>
         <div className="need">
-                \
+                
                 <br />
                 <br />
                 <h3 className="homeh3">Need A Ride ?</h3>
@@ -115,10 +115,15 @@ function Home() {
                                 <div className="text-left pl-2">
                                     <p><b>{car.name}</b></p>
                                     <p> Rent Per Hour /- {car.rentPerHour}</p>
+                                    <p>Starting point : {car.starting}</p>
+                                    <p>Destination : {car.destination}</p>
+
                                 </div>
+                        
 
                                 <div>
-                                    <button className="btn1     "><Link to={`/booking/${car._id}`}>Book Now</Link></button>
+                                    <button className="btn1"><Link to={`/booking/${car._id}`}>Book Now</Link>
+                                    </button>
                                 </div>
 
                             </div>

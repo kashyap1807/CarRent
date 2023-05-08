@@ -44,6 +44,14 @@ function AddCar() {
                             <Input />
                         </Form.Item>
 
+                        <Form.Item name="starting" label="Starting point" rules={[{ required: true }]}>
+                            <Input />
+                        </Form.Item>
+
+                        <Form.Item name="destination" label="Destination" rules={[{ required: true }]}>
+                            <Input />
+                        </Form.Item>
+
                         <Form.Item name="capacity" label="Capacity" rules={[{ required: true }]}>
                             <Input />
                         </Form.Item>
@@ -62,6 +70,9 @@ function AddCar() {
                 </Col>
 
             </Row>
+
+            <br />
+            <br />
 
         </DefaultLayout>
     )
