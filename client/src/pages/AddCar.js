@@ -36,7 +36,8 @@ function AddCar() {
                             <Input />
                         </Form.Item>
 
-                        <Form.Item name="image" label="Image Url" rules={[{ required: true }]}>
+                        <Form.Item name="image" label="Image Url" >
+                        {/* rules={[{ required: true }]} */}
                             <Input />
                         </Form.Item>
 

@@ -97,11 +97,11 @@ function Home() {
         </div>
 
 
-            {/* <Row className='mt-3' justify="center" >
+            <Row className='mt-3' justify="center" >
                 <Col lg={20} sm={24} className='d-flex justify-content-center'>
                     <RangePicker showTime={{ format: 'HH:mm' }} format='MMM DD yyyy HH:mm' onChange={setFilter} />
                 </Col>
-            </Row> */}
+            </Row>
 
 
             {loading === true && (<Spinner />)}
