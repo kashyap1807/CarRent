@@ -48,7 +48,7 @@ function About() {
                         <div class="box">
                             
                         <h3 className="sec2h3">Contact</h3>
-                        <p>[E-Mail : carpool@gmail.com <br></br>
+                        <p>[E-Mail : carrent@gmail.com <br></br>
                             Phone : +91 93767 90534<br></br>
                             Instagram: CarPool01<br></br>
                             Address : Delhi,D 10012, Ind]</p>

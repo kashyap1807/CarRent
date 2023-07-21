@@ -44,7 +44,7 @@ function DefaultLayout(props) {
                 <Row gutter={16} justify='center'>
                     <Col lg={20} sm={24} xs={24}>
                         <div className="d-flex justify-content-between">
-                            <h1 ><b><Link to='/' style={{fontSize:30}} >CarPool</Link></b></h1>
+                            <h1 ><b><Link to='/' style={{fontSize:30}} >CarRent</Link></b></h1>
                             <div>
                             <Link to="/AddCar" id='links' style={{marginRight: "1.5rem"}}>Publish Ride</Link>
                             <Dropdown overlay={menu} placement="bottomCenter">
@@ -70,13 +70,13 @@ function DefaultLayout(props) {
 			<div class="row">
 				<div class="col-md-3 m-b-30">
 					<div class="footer-title m-t-5 m-b-20 p-b-8">
-						CarPool System
+						CarRent System
 					</div>	
 					<p class="white-text" style={{}}>
-						This is a Carpool system...
+						This is a CarRent system...
 						<br/>
 						<br/>
-						Design And Created By CarPool System Team.
+						Design And Created By CarRent System Team.
 					</p>
 				</div>
 				<div class="col-md-3 m-b-30">
@@ -122,7 +122,7 @@ function DefaultLayout(props) {
 							Delhi , D 10012 , Ind
 						</p>
 						<p>
-							carpool18@gmail.com
+							carrent18@gmail.com
 						</p>
 						<p>
 							+91293 13256
@@ -137,7 +137,7 @@ function DefaultLayout(props) {
 		</div>
 	</footer>
 	<div class="footer-bottom">
-        Carpool ©2023 Created by CarPool Team 
+        CarRent ©2023 Created by CarRent Team 
 	</div>
     	</div>
 	</div>

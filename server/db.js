@@ -1,7 +1,10 @@
 const mongoose = require('mongoose');
 
 function connectDB(){
-    mongoose.connect('mongodb+srv://carpool1:carpoolpassword@carpool1.ejclsbd.mongodb.net/?retryWrites=true&w=majority',{useUnifiedTopology:true ,useNewUrlParser:true})
+    mongoose.connect(
+      "mongodb+srv://carpool1:carpoolpassword@carpool1.ejclsbd.mongodb.net/?retryWrites=true&w=majority",
+      { useUnifiedTopology: true, useNewUrlParser: true }
+    );
 
     const connection = mongoose.connection
 

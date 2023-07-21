@@ -24,7 +24,7 @@ function Register() {
         <div className="login">
             {loading && (<Spinner />)}
             
-            <h2 className="heading">CarPool System</h2>
+            <h2 className="heading">CarRent System</h2>
             <Row gutter={16} className='d-flex align-items-center'>
 
                 <Col lg={16} style={{ position: 'relative' }}>

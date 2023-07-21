@@ -63,14 +63,14 @@ function Home() {
             <br />
             <br />
             {/* {user &&  */}
-            <h1>CarPool for the Planet</h1>
+            <h1>CarRent for the Planet</h1>
             <br />
             
             <div className="sec-1">
 
                 <div className="container">
                     <div className="col61">
-                        <h2 className="headinghome">Pick A Ride <br/>Contribute to Society</h2>
+                        <h2 className="headinghome">Pick A Ride<br/>Now !</h2>
                         <br />
                         <p className="homep">[Partner with us to drive your own livelihood and more.]</p>
                         <br />
